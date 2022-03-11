@@ -28,7 +28,7 @@ const BooksStats: React.FC<StramingSiteType> = ({ site }) => {
     setReady(false);
 
     axios
-      .post("http://localhost:4000/scrapeBook", {
+      .post("https://book-scrapper077.herokuapp.com/scrapeBook", {
         url: site.url,
         titles: bookList,
       })
